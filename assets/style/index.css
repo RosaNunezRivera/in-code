@@ -75,7 +75,7 @@ span {
 }
 
 .container-form {
-   width: 40%;
+   width: 35%;
    position: absolute;
    top: 50%;
    left: 70%;
@@ -177,7 +177,7 @@ input[type="text"]:hover {
 }
 
 .login-btn {
-   width: 40%;
+   width: 35%;
    text-align: center;
    margin: 20px 20px;
    padding: 10px 10px;
@@ -197,7 +197,7 @@ input[type="text"]:hover {
 }
 
 .singup-btn {
-   width: 40%;
+   width: 35%;
    text-align: center;
    margin: 20px 20px;
    padding: 10px 10px;
