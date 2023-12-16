@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rosa Nunez">
+    <meta name="description" content="Rosa Nunez o Web Developer">
+    <meta name="keywords" content="web developer, web, developer, front-end,html, CSS, JavaScript">
+    <title>CodeSpace | Rosa Nunez </title>
+    <link rel="shortcut icon" href="./assets/img/faviconrosa.ico" type="image/x-icon">
+    <!-- CSS & JavaScript files -->
+    <link rel="stylesheet" href="./assets/style/home.css" media="all">
+    <script src="./assets/script/home.js" type="module"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="fixed-header">
+        <div class="container-header flex">
+
+            <div class="div-logo">
+                <h2><a href="#" class="logotype">InCode</a></h2>
+            </div>
+
+
+            <div class="div-menu-options">
+                <nav>
+                    <ul>
+                        <div class="div-col">
+                            <div class="div-row-icos">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                            <div class="div-row-title">
+                                <li><a href="#">Home</a></li>
+                            </div>
+                        </div>
+
+                        <div class="div-col">
+                            <div class="div-row-icos">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="div-row-title">
+                                <li><a href="#">Developers</a></li>
+                            </div>
+                        </div>
+
+                        <div class="div-col">
+                            <div class="div-row-icos">
+                                <i class="fa-solid fa-chalkboard"></i>
+                            </div>
+                            <div class="div-row-title">
+                                <li><a href="#">E-Learning</a></li>
+                            </div>
+                        </div>
+
+                        <div class="div-col">
+                            <div class="div-row-icos">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div class="div-row-title">
+                                <li><a href="#">My Network</a></li>
+                            </div>
+                        </div>
+
+                        <div class="div-col">
+                            <div class="div-row-icos">
+                                <i class="fa-solid fa-id-card"></i>
+                            </div>
+                            <div class="div-row-title">
+                                <li><a href="#">Contact</a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+            <div class="div-profile-image" id="openModalBt">
+                <div class="div-col">
+                    <div class="div-row-icos">
+                        <img src="./assets/img/photo.jpeg" alt="Profile Image">
+                    </div>
+                    <div class="div-row-title">
+                        <a class="my-profile" href="#">Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-main flex">
+            <div class="column-profile">
+                <div class="title-user">
+                    <img class="img-user" src="./assets/img/photo.jpeg" alt="I enjoy to learn!">
+                </div>
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="info-user">
+                    <p>Rosa Nunez</p>
+                </div>
+                <div class="more-info">
+                    <p>Software Developer Student</p>
+                    <p>MITT</p>
+                </div>
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="info-footer">
+                    <div class="row"><i>Groups</i></div>
+                    <div class="row"><i>Events</i></div>
+                </div>
+
+                <div class="followers">
+                    <p>Followers: <span class="blue">20</span></p>
+                </div>
+
+                <div class="followers">
+                    <button class="follow-btn">Follow</button>
+                </div>
+            </div>
+
+            <div class="column-posts">
+                <!-- Post-Input -->
+                <form class="post-form">
+                    <div class="div-post-textarea">
+                        <textarea name="message" id="text" name="post" placeholder="What's new Rosa" cols="30"
+                            rows="5"></textarea>
+                    </div>
+                    <div class="div-post-footer">
+                        <div class="div-upload-file">
+                            <label for="file" class="upload-file-label"><i class="fa-solid fa-file-arrow-up fa-2xl"></i>
+                                <input type="file" id="file" name="file" class="upload-input">
+                            </label>
+                        </div>
+                        <div class="div-name-file">
+                        </div>
+                        <div class="div-post-button">
+                            <input type="button" class="post-button" value="Post"></input>
+                        </div>
+                    </div>
+                </form>
+                <div class="posts-container">
+                    <div class="post">
+                        <div class="post-header">
+                            <div class="post-header-image">
+                            </div>
+                            <div class="user">
+                                Rosa Nunez
+                            </div>
+                            <div class="post-header-options">
+                                <p>Dec 15, 2023</p>
+                            </div>
+                        </div>
+                        <p>Enjoy learning in CodeSpace</p>
+                        <div class="post-body-image">
+                            <img src="./assets/img/img1.jpg" alt="I enjoy to learn!">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="posts-container">
+                    <div class="post">
+                        <div class="post-header">
+                            <div class="post-header-image">
+
+                            </div>
+                            <div class="user">
+                                Rosa Nunez
+                            </div>
+                            <div class="post-header-options">
+                                <p>Dec 14, 2023</p>
+                            </div>
+                        </div>
+                        <p>Other day to learn!</p>
+                        <div class="post-body-image">
+                            <img src="./assets/img/img2.jpg" alt="I enjoy to learn!">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="posts-container">
+                    <div class="post">
+                        <div class="post-header">
+                            <div class="post-header-image">
+                            </div>
+                            <div class="user">
+                                Rosa Nunez
+                            </div>
+                            <div class="post-header-options">
+                                <p>Dec 11, 2023</p>
+                            </div>
+                        </div>
+                        <p>Improving code!</p>
+                        <div class="post-body-image">
+                            <img src="./assets/img/img4.jpg" alt="I enjoy to learn!">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="column-contacts">
+                <p>People you may know</p>
+                <div class="grid-contacts">
+
+                </div>
+
+                <div class="container-footer">
+                    <div class="footer-links">
+                        <p><a href="#">About</a></p>
+                        <p><a href="#">Developers</i></a></p>
+                        <p><a href="#">E-Learning</i></a></p>
+                        <p><a href="#">Contact</i></a></p>
+                        <p><a href="#">More</i></a></p>
+                    </div>
+                    <div class="footer-copy">
+                        <p>&copy;2023 Rosa Nunez</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <noscript>
+        <p> This page requieres a JavaScript-enable browser</p>
+    </noscript>
+
+</body>
+
+</html>

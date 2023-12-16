@@ -1,0 +1,761 @@
+@import "./reset.css";
+
+:root {
+   /*Global variables*/
+   --app-with: #fcfbfa;
+   --app-ligh-bg: #f5f6fa;
+   --app-ligh-violet: #f7f0ff;
+   --app-violet: #e9d7ff;
+   --app-violet-dark: #cda4ff;
+   --app-violet-more-dark: #d3bbf2;
+   --app-border: #bf8bff;
+   --app-logo: #834ec4;
+   --app-text-violet: #bf8bff;
+   --app-green: #7bff00;
+   --app-green-hover: #4c9d00;
+   --app-blue: #007bff;
+   --app-blue-hover: #6eb2fb;
+   --app-text-dark-gray: #343434;
+   --app-grey: #5a5a5a;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*                    Containers                         */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+main {
+   background-color: var(--app-ligh-bg);
+}
+
+.container-header {
+   width: min(100% - 30px, 1080px);
+   margin-inline: auto;
+}
+
+.flex {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*                    Header                             */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.fixed-header {
+   position: fixed;
+   top: 0%;
+   left: 0%;
+   width: 100%;
+   height: 80px;
+   background-color: var(--app-with);
+   padding: 10px;
+   color: var(--app-text-dark-gray);
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.div-logo {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   flex: 1;
+}
+
+.div-profile-image {
+   flex: 1;
+}
+
+.div-menu-options {
+   display: flex;
+   flex: 4;
+   text-align: center;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.div-col {
+   padding: 5px 5px;
+   margin-left: 20px;
+   width: max-content;
+}
+
+.div-row-icons {
+   align-items: center;
+   height: 40px;
+}
+
+.div-row-titles {
+   align-items: center;
+   height: 40px;
+}
+
+/*-------------------------------------------------------------*/
+/*                    Stylo to Logo                            */
+/*-------------------------------------------------------------*/
+.div-logo h2 .logotype {
+   color: var(--app-blue);
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   font-size: 45px;
+   font-weight: 350;
+   letter-spacing: 0.4px;
+   font-style: italic;
+}
+
+h2 .logotype:hover {
+   color: var(--app-blue-hover);
+   transition: color 0.5s ease-in-out;
+}
+
+/*-------------------------------------------------------------*/
+/*                    Style to Nav Options                     */
+/*-------------------------------------------------------------*/
+.div-menu-options li a {
+   color: var(--app-text-dark-gray);
+   font-size: 20px;
+   list-style: none;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+   text-decoration: none;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+
+li a:hover,
+.div-row-icos i:hover {
+   color: var(--app-blue);
+   transition: color 0.5s ease-in-out;
+}
+
+/*-------------------------------------------------------------*/
+/*                    Style to Img profile                     */
+/*-------------------------------------------------------------*/
+.div-profile-image {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
+.div-profile-image img {
+   width: 32px;
+   height: 32px;
+   border-radius: 50%;
+}
+
+.my-profile {
+   cursor: pointer;
+   color: var(--app-text-dark-gray);
+}
+
+.my-profile:hover {
+   color: var(--app-blue);
+   transition: color 0.5s ease-in-out;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*                  Columns                              */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.container-main {
+   width: min(100% - 30px, 1080px);
+   margin-top: 100px;
+   margin-inline: auto;
+   justify-content: flex-start;
+   align-items: flex-start;
+   gap: 15px;
+}
+
+main {
+   height: 100vh;
+   background-color: var(--app-ligh-bg);
+}
+
+.column-profile {
+   display: flex;
+   flex: 1;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   height: max-content;
+   background-color: var(--app-with);
+   border: 1px solid #e9e6e6;
+   border-radius: 10px;
+}
+
+.title-user {
+   height: 80px;
+   font-size: 15px;
+   opacity: 4;
+   display: flex;
+   justify-content: row;
+}
+
+.row {
+   height: 20px;
+}
+
+.img-user {
+   margin-top: 20px;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+}
+
+.img-user img {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+
+.info-user p {
+   color: var(--app-text-dark-gray);
+   font-size: 20px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+}
+
+.more-info {
+   height: 30px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.more-info p {
+   line-height: 30px;
+   font-size: 15px;
+   display: flex;
+   font-style: italic;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+}
+
+.info-footer {
+   border: .5px solid #e9e6e6;
+   font-size: 18px;
+   width: 100%;
+   height: 65px;
+   display: row;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+}
+
+.info-footer .row i:hover {
+   color: var(--app-blue-hover);
+   transition: color 0.5s ease-in-out;
+}
+
+.followers {
+   display: flex;
+   display: row;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   width: 100%;
+   font-size: 15px;
+   background-color: var(--app-with);
+   height: 70px;
+   border: .5px solid #e9e6e6;
+}
+
+.blue {
+   color: var(--app-blue);
+   font-style: italic;
+}
+
+.follow-btn {
+   width: 140px;
+   height: 46px;
+   background-color: var(--app-blue);
+   border-radius: 6px;
+   font-style: 1.6rem;
+   color: var(--app-with);
+   font-weight: 600;
+}
+
+.column-posts {
+   display: flex;
+   flex: 2;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 10px;
+}
+
+.column-users {
+   display: flex;
+   flex: 1;
+   height: 100px;
+   padding: 10px 10px 10px 10px;
+   background-color: var(--app-with);
+   border-radius: 10px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*                  Posts                                */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.div-post-textarea {
+   display: flex;
+   flex-direction: row;
+}
+
+.post-form {
+   padding: 16px;
+   border-radius: 5px;
+   width: 100%;
+   height: 100%;
+   gap: 10px;
+   background-color: var(--app-with);
+}
+
+.div-post-footer {
+   background-color: var(--app-with);
+   display: flex;
+   height: 54px;
+}
+
+/*Div for Icon Upload file*/
+.div-upload-file {
+   flex: 1;
+   display: flex;
+}
+
+.div-upload-file label .fa-2xl {
+   display: flex;
+   line-height: 54px;
+   align-items: center;
+   text-align: center;
+   justify-content: left;
+   font-size: 44px;
+   color: var(--app-blue);
+}
+
+.div-upload-file label .fa-2xl:hover {
+   color: var(--app-blue-hover);
+   transition: all 0.25s ease-in-out;
+}
+
+/*Div for name of Upload file*/
+.div-name-file {
+   display: flex;
+   flex: 5;
+   margin-left: 10px;
+   align-items: center;
+   justify-content: left;
+}
+
+p {
+   line-height: 40px;
+   color: var(--app-text-dark-gray);
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+}
+
+/*Div for post button*/
+.div-post-button {
+   flex: 1;
+   display: flex;
+   align-items: center;
+   justify-content: right;
+   padding: 5px;
+}
+
+textarea {
+   width: 100%;
+   height: 120px;
+   resize: none;
+   color: var(--app-text-dark-gray);
+   font-size: 20px;
+   border-radius: 6px;
+   background-color: transparent;
+   overflow: hidden;
+}
+
+textarea::placeholder {
+   color: var(--app-text-dark-gray);
+}
+
+.div-upload-file input {
+   display: none;
+   color: var(--app-text-dark-gray);
+}
+
+.upload-file-label {
+   width: 30px;
+   height: 46px;
+   cursor: pointer;
+}
+
+input[type="button"] {
+   background-color: var(--app-blue);
+   width: 100px;
+   height: 44px;
+   text-align: center;
+   border-radius: 6px;
+   font-size: 20px;
+   font-weight: 600;
+   letter-spacing: 0.2px;
+   transition: all 0.25s ease-in-out;
+   color: var(--app-with);
+   cursor: pointer;
+}
+
+input[type="button"]:hover {
+   background-color: var(--app-blue-hover);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*                  Already Posted                       */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.posts-container {
+   width: 100%;
+   height: max-content;
+}
+
+.post {
+   background-color: var(--app-with);
+   color: var(--app-lessdark-bg);
+   font-size: 22px;
+   border-radius: 5px;
+   padding: 16px;
+   margin-bottom: 16px;
+   width: 100%;
+   margin: 16px auto;
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   gap: 16px;
+}
+
+.post p {
+   text-align: left;
+   color: var(--app-lessdark-bg);
+   font-size: 18px;
+}
+
+.post-text {
+   color: var(--app-lessdark-bg);
+   font-size: 22px;
+}
+
+.post-header {
+   color: var(--app-lessdark-bg);
+   display: flex;
+   justify-content: flex-start;
+   align-items: left;
+   gap: 16px;
+}
+
+.post-header-image {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-image: url("../img/photo.jpeg");
+   background-size: cover;
+}
+
+
+.post-header-options {
+   color: var(--app-lessdark-bg);
+   margin-left: auto;
+   margin-right: 16px;
+}
+
+.post-body-image {
+   width: 100%;
+   object-fit: cover;
+}
+
+.post-body-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 5px;
+}
+
+.visible {
+   visibility: visible;
+}
+
+.user {
+   font-weight: 700;
+   font-size: 18px;
+}
+
+.date {
+   color: var(--app-lessdark-bg);
+   font-size: 26px;
+}
+
+/*------------------------------------------------------------*/
+/*                             Modal                          */
+/*------------------------------------------------------------*/
+
+.modal {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: transparent;
+   backdrop-filter: blur(20px);
+   transition: all 0.5s ease;
+   z-index: 1;
+}
+
+h3 {
+   font-size: 26px;
+   color: var(--app-blue);
+}
+
+.modal-content {
+   background-color: var(--app-lessdark-bg);
+   color: var(--app-lessdark-bg);
+   margin: 20% auto;
+   padding: 20px;
+   border-radius: 6px;
+   width: 60%;
+}
+
+.close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+
+/*------------------------------------------------*/
+/*-----------------Footer-------------------------*/
+/*------------------------------------------------*/
+
+footer {
+   background-color: #172b40;
+   height: 150px;
+}
+
+.container-footer {
+   width: min(100% - 30px, 1080px);
+   margin-inline: auto;
+   margin: auto;
+}
+
+.footer-row {
+   width: 100%;
+   height: 150px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   flex-direction: row;
+}
+
+.footer-column1 {
+   flex: 1;
+}
+
+.footer-column2 {
+   flex: 1;
+}
+
+.footer-column2 p {
+   font-size: 16px;
+   font-weight: 400;
+   color: var(--app-white);
+}
+
+.footer-column1 .icons a i {
+   display: inline-block;
+   height: 40px;
+   width: 40px;
+   background-color: var(--app-turquoise);
+   margin: 0 11px 11px 0;
+   text-align: center;
+   line-height: 40px;
+   border-radius: 50%;
+   color: var(--app-white);
+   transition: all 0.5s ease;
+}
+
+.footer-column1 .icons a i:hover {
+   background-color: var(--app-gray-background);
+   color: var(--app-turquoise);
+}
+
+/*------------------------------------------------------------*/
+/*                    List of users                           */
+/*------------------------------------------------------------*/
+/*
+.grid {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   justify-content: center;
+   place-items: center;
+   gap: 10px;
+   width: 100%;
+   height: 100%;
+}*/
+
+.grid {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding: 10px;
+}
+
+
+.title-grid {
+   font-size: 2.2rem;
+   font-weight: 700;
+   letter-spacing: -0.2px;
+   align-items: center;
+   justify-content: center;
+   color: var(--app-pink-bg)
+}
+
+.user-info {
+   color: var(--app-pink-bg);
+   margin-top: 10px;
+   font-size: 20px;
+   font-weight: 50;
+   line-height: 1.8;
+}
+
+.contact-img {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+/*-------------------------------------------------------------*/
+/*                    Stylo to Logo                            */
+/*-------------------------------------------------------------*/
+.div-logo h2 .logotype {
+   color: var(--app-blue);
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   font-size: 40px;
+   font-weight: 300;
+   letter-spacing: 0.4px;
+   font-style: italic;
+}
+
+h2 .logotype:hover {
+   color: var(--app-blue-hover);
+   transition: color 0.5s ease-in-out;
+}
+
+
+/* -------------------------------------------------------------------- */
+/*                           Contacts List                              */
+/* -------------------------------------------------------------------- */
+
+.column-contacts {
+   background-color: var(--app-with);
+   padding: 5px 5px;
+   gap:10px;
+}
+
+.contact-div {
+   border: 1px solid #f4eded;
+   padding: 3px 3px;
+   display: flex;
+   flex-direction: row;
+   margin-top: 10px;
+   gap: 6px;
+}
+
+.contact-img {
+   background-color: var(--app-ligh-bg);
+   align-self: center;
+   justify-content: center;
+   text-align: center;
+   justify-content: center;
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.contact-info {
+   width: 92px;
+   display: grid;
+   place-content: center;
+   color: var(--app-blue-hover);
+   font-size: 12px;
+}
+
+.contact-name {
+   width: 100%;
+   font-style: italic;
+   font-size: 15px;
+   font-weight: 200;
+   color: var(--app-blue);
+   cursor: pointer;
+}
+
+.contact-city {
+   height: 12px;
+   color: var(--app-text-dark-gray);
+   font-size: 8px;
+}
+
+.fa-user-plus {
+   width: 40px;
+   align-self: center;
+   justify-content: center;
+   text-align: center;
+   color: var(--app-blue);
+   font-size: 15px;
+   cursor: pointer;
+}
+
+.container-footer
+{
+   display: flex;
+   flex-direction: column;
+   border: 1px solid #f4eded;
+   width: 100%;
+   gap: 5px;
+   font-size: 15px;
+}
+ 
+.footer-links p a:hover {
+   color: var(--app-blue-hover);
+   text-decoration: underline;
+   transition: color 0.5s ease-in-out;
+}
+ 
+.footer-copy {
+   font-size: 13px;
+}

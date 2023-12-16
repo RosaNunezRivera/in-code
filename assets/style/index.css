@@ -1,0 +1,218 @@
+@import "./reset.css";
+
+:root {
+   /*Global variables*/
+   --app-with: #fcfbfa;
+   --app-ligh-bg: #f5f6fa;
+   --app-ligh-violet: #f7f0ff;
+   --app-violet: #e9d7ff;
+   --app-violet-dark: #cda4ff;
+   --app-violet-more-dark: #d3bbf2;
+   --app-border: #bf8bff;
+   --app-logo: #834ec4;
+   --app-text-violet: #bf8bff;
+   --app-green: #7bff00;
+   --app-green-hover: #4c9d00;
+   --app-blue: #007bff;
+   --app-blue-hover: #6eb2fb;
+   --app-text-dark-gray: #343434;
+   --app-grey: #5a5a5a;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*                    Containers                         */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.container {
+   width: min(100% - 30px, 1080px);
+   height: 100%;
+   margin-inline: auto;
+}
+
+.flex {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*                   Login Page                          */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.container-page-login {
+   position: relative;
+   width: 100%;
+   height: 100dvh;
+   margin-inline: auto;
+   background-image: url('../img/photo-login3.jpg');
+   background-blend-mode: normal;
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center top;
+}
+
+.overlay {
+   mix-blend-mode: multiply;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.4);
+}
+
+.blue {
+   color: var(--app-blue);
+   font-style: italic;
+}
+
+span {
+   font-style: bold;
+   font-size: 25px;
+   font-weight: 400;
+}
+
+.container-form {
+   width: 40%;
+   position: absolute;
+   top: 50%;
+   left: 70%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   font-size: 50px;
+   line-height: 1.2;
+   padding: 25px;
+   background-color: var(--app-with);
+   border-radius: 20px;
+   justify-content: space-around;
+}
+
+
+/*-------------------------------------------------------------*/
+/*                    Stylo to Logo                            */
+/*-------------------------------------------------------------*/
+.div-logo-login {
+   display: flex;
+   width: 100%;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.div-logo-login h2 .logotype {
+   color: var(--app-blue);
+   text-align: center;
+   font-size: 60px;
+   font-weight: 400;
+   letter-spacing: 0.4px;
+   font-style: italic;
+   margin-bottom: 16x;
+}
+
+h2 a:hover {
+   color: var(--app-primarybotton-color);
+   transition: color 0.5s;
+}
+
+.welcome {
+   color: var(--app-grey);
+   text-align: center;
+   font-size: 28px;
+   font-weight: 350;
+   margin-bottom: 16x;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*                   Form Loging                               */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.input-container {
+   width: 100%;
+   position: relative;
+   justify-content: space-around;
+}
+
+.form-login {
+   width: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+   width: 90%;
+   height: 55px;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   padding: 10px 10px;
+   font-size: 20px;
+   color: var(--app-dark-blue-bg);
+   border: 1px solid #bdb8b8;
+   border-radius: 5px;
+   background-color: transparent;
+}
+
+input[type="text"]::placeholder {
+   color: var(--app-blue);
+}
+
+input[type="password"]::placeholder {
+   color: var(--app-blue);
+}
+
+input[type="text"]:hover {
+   border-color: var(--app-purple);
+}
+
+.error-message {
+   color: #ff0000;
+   display: none;
+   /* Initially, error messages are hidden */
+   margin-left: 40px;
+   font-size: 16px;
+   margin-top: 0px;
+   padding-top: 0px;
+   top: 75%;
+   position: absolute;
+   /* Add space above the error message */
+}
+
+.login-btn {
+   width: 40%;
+   text-align: center;
+   margin: 20px 20px;
+   padding: 10px 10px;
+   color: var(--app-with);
+   font-weight: 600;
+   background-color: var(--app-blue);
+   border: 1px solid var(--app-blue);
+   border-radius: 5px;
+   font-size: 20px;
+   transition: all 0.25s ease-in-out;
+   cursor: pointer;
+}
+
+.login-btn:hover {
+   background-color: var(--app-blue-hover);
+   transition: background-color 0.3s ease-in-out;
+}
+
+.singup-btn {
+   width: 40%;
+   text-align: center;
+   margin: 20px 20px;
+   padding: 10px 10px;
+   color: var(--app-blue);
+   font-weight: 600;
+   background-color: var(--app-ligh-bg);
+   border: 1px solid var(--app-blue);
+   border-radius: 5px;
+   font-size: 20px;
+   transition: all 0.25s ease-in-out;
+   cursor: pointer;
+}
+
+.singup-btn:hover {
+   color: var(--app-with);
+   background-color: var(--app-blue-hover);
+   transition: background-color 0.3s ease-in-out;
+}

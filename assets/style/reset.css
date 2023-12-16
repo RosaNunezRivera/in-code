@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border-style: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    text-size-adjust: none;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    overflow: auto;
+    background-color: var(--app-ligh-bg);
+    /*outline: 2px dashed rgb(205, 33, 148);*/
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    overflow-wrap: break-word;
+}
+
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+a,
+i,
+figure,
+img,
+button,
+input[type="button"],
+input[type="submit"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+    border-style: none;
+    outline-style: none;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    width: min(100% - 25px, 1080px);
+    margin-inline: auto;
+    box-sizing: border-box;
+}
